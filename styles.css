@@ -1198,6 +1198,14 @@ h3 {
    ========================================================================== */
 
 @media (max-width: 767px) {
+   .categoria-section {
+    position: relative;
+    padding: 50px 0;
+    background:  rgba(48, 23, 43, 0.50),   url("assets/hero-8bit-empty.png");
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+   }
     .supervision-info {
 
         align-items: flex-start;
@@ -1309,9 +1317,9 @@ h3 {
    CRONOGRAMA SECTION
    ========================================================================== */
 .cronograma-section {
+    background:  rgba(48, 23, 43, 0.50),   url("assets/hero-8bit.png");
     position: relative;
     padding: 50px 0;
-    background:  rgba(48, 23, 43, 0.50),   url("assets/hero-8bit.png");
     background-size: cover;
     background-position: center top;
     background-attachment: fixed;
