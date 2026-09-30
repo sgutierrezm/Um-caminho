@@ -138,7 +138,7 @@ body {
 
   background:
     linear-gradient(180deg, rgba(1, 24, 38, 0.50), rgba(48, 23, 43, 0.80)),
-    var(--hero-image);
+     url("assets/hero-8bit.png");
 
   background-repeat: no-repeat;
 
