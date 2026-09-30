@@ -1315,7 +1315,7 @@ h3 {
 .cronograma-section {
     position: relative;
     padding: 50px 0;
-    background:  rgba(48, 23, 43, 0.80),var(--hero-image);
+    background:  rgba(48, 23, 43, 0.80),   url("assets/hero-8bit.png");
     background-size: cover;
     background-position: center top;
     background-attachment: fixed;
@@ -2102,17 +2102,17 @@ h3 {
     min-height: 680px;
 
     padding: 60px 15px;
-    background-image: url("../assets/hero-8bit-mobile.png");
+    background-image: url("assets/hero-8bit-mobile.png");
     background-size: cover;
     background-position: center;
   }
   .bg-organization {
-    background-image: url("../assets/hero-8bit-empty-mobile.png");
+    background-image: url("assets/hero-8bit-empty-mobile.png");
     background-size: cover;
     background-position: center;
   }
   .cronograma-section {
-    background-image: url("../assets/hero-8bit-empty-mobile.png");
+    background-image: url("assets/hero-8bit-empty-mobile.png");
     background-size: cover;
     background-position: center;
   }
