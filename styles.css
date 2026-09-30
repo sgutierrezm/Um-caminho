@@ -85,23 +85,6 @@
   --transition: 0.2s ease;
 
   /* ----------------------------------------------------------------------
-       IMAGEM PRINCIPAL
-       ----------------------------------------------------------------------
-
-       Coloque sua imagem pixel-art aqui.
-
-       Exemplo:
-       assets/hero-8bit.png
-    */
-
-    --hero-image: 
-        url("assets/hero-8bit.png");
-    --hero-image-mobile: 
-        url("assets/hero-8bit-mobile.png");
-    --hero-image-empty: 
-        url("assets/hero-8bit-empty.png");
-    --hero-image-empty-mobile: 
-        url("assets/hero-8bit-empty-mobile.png");
 }
 
 /* ==========================================================================
@@ -1014,7 +997,7 @@ h3 {
    ========================================================================== */
 .bg-organization {
     position:relative;
-    background: var(--hero-image-empty);
+    background:url("assets/hero-8bit-empty.png");
     background-attachment: fixed;
     background-position: center;
 
