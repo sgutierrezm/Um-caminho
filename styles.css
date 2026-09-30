@@ -95,13 +95,13 @@
     */
 
     --hero-image: 
-        url("../assets/hero-8bit.png");
+        url("assets/hero-8bit.png");
     --hero-image-mobile: 
-        url("../assets/hero-8bit-mobile.png");
+        url("assets/hero-8bit-mobile.png");
     --hero-image-empty: 
-        url("../assets/hero-8bit-empty.png");
+        url("assets/hero-8bit-empty.png");
     --hero-image-empty-mobile: 
-        url("../assets/hero-8bit-empty-mobile.png");
+        url("assets/hero-8bit-empty-mobile.png");
 }
 
 /* ==========================================================================
