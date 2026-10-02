@@ -674,27 +674,34 @@ Categoria section
     var(--purple-glow);
 }
 /* ==========================================================================
-   BOTÃO DE MÚSICA — TOPO ESQUERDO
+   BOTÓN DE MÚSICA — FIJO / FLOTANTE
    ========================================================================== */
 
 .music-toggle {
     position: fixed;
 
-    top: 75px;
-    left: 20px;
+    /* Posición */
+    right: 24px;
+    bottom: 24px;
 
-    z-index: 900;
+    /* Siempre por encima del contenido */
+    z-index: 9999;
+
+    /* Tamaño */
+    min-width: 150px;
+    min-height: 46px;
 
     padding: 10px 14px;
 
+    /* Apariencia */
     background: var(--purple-main);
-
     color: var(--white);
 
     border: 3px solid var(--purple-light);
 
+    /* Estética pixel-art */
     box-shadow:
-        4px 4px 0 var(--purple-black);
+        5px 5px 0 var(--purple-black);
 
     font-family:
         'Press Start 2P',
@@ -702,18 +709,28 @@ Categoria section
         monospace;
 
     font-size: .5rem;
+    line-height: 1.4;
 
     cursor: pointer;
 
+    /* Evita que el texto se seleccione */
+    user-select: none;
+
+    /* Transición */
     transition:
-        transform .2s ease,
-        background .2s ease,
-        box-shadow .2s ease,
-        border-color .2s ease;
+        transform .15s ease,
+        background .15s ease,
+        box-shadow .15s ease,
+        border-color .15s ease;
+
+    /* Evita que el botón se vea transparente */
+    opacity: 1;
 }
 
 
-/* Hover */
+/* ==========================================================================
+   HOVER
+   ========================================================================== */
 
 .music-toggle:hover {
 
@@ -724,19 +741,21 @@ Categoria section
     border-color: var(--white);
 
     transform:
-        translate(2px, 2px);
+        translate(3px, 3px);
 
     box-shadow:
         2px 2px 0 var(--purple-black);
 }
 
 
-/* Clique */
+/* ==========================================================================
+   CLICK
+   ========================================================================== */
 
 .music-toggle:active {
 
     transform:
-        translate(4px, 4px);
+        translate(5px, 5px);
 
     box-shadow:
         none;
@@ -751,15 +770,42 @@ Categoria section
 
     .music-toggle {
 
-        top: 12px;
-        left: 12px;
+        /* Esquina inferior derecha */
+        right: 14px;
+        bottom: 14px;
+
+        /* Más compacto */
+        min-width: auto;
 
         padding: 10px 12px;
 
-        font-size: .45rem;
+        font-size: .42rem;
 
+        /* Sombra más pequeña */
         box-shadow:
             3px 3px 0 var(--purple-black);
+
+        /* Respeta celulares con notch / barra inferior */
+        bottom:
+            calc(14px + env(safe-area-inset-bottom));
+    }
+
+}
+
+
+/* ==========================================================================
+   CELULARES MUY PEQUEÑOS
+   ========================================================================== */
+
+@media (max-width: 380px) {
+
+    .music-toggle {
+
+        right: 10px;
+
+        padding: 9px 10px;
+
+        font-size: .38rem;
     }
 
 }
