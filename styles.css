@@ -673,33 +673,36 @@ Categoria section
     7px 7px 0 var(--purple-black),
     var(--purple-glow);
 }
-/* ==========================================================================
-   BOTÓN DE MÚSICA — FIJO / FLOTANTE
-   ========================================================================== */
+/* =========================================================
+   BOTÓN DE MÚSICA — FIJO
+   ========================================================= */
 
 .music-toggle {
-    position: fixed;
+    position: fixed !important;
 
-    /* Posición */
-    right: 24px;
-    bottom: 24px;
+    right: 20px !important;
+    bottom: 20px !important;
 
-    /* Siempre por encima del contenido */
-    z-index: 9999;
+    top: auto !important;
+    left: auto !important;
 
-    /* Tamaño */
-    min-width: 150px;
-    min-height: 46px;
+    z-index: 999999 !important;
+
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    width: auto;
+    min-width: 145px;
+    min-height: 44px;
 
     padding: 10px 14px;
 
-    /* Apariencia */
     background: var(--purple-main);
     color: var(--white);
 
     border: 3px solid var(--purple-light);
 
-    /* Estética pixel-art */
     box-shadow:
         5px 5px 0 var(--purple-black);
 
@@ -708,104 +711,100 @@ Categoria section
         'Courier New',
         monospace;
 
-    font-size: .5rem;
+    font-size: 0.5rem;
     line-height: 1.4;
 
     cursor: pointer;
-
-    /* Evita que el texto se seleccione */
     user-select: none;
 
-    /* Transición */
     transition:
-        transform .15s ease,
-        background .15s ease,
-        box-shadow .15s ease,
-        border-color .15s ease;
-
-    /* Evita que el botón se vea transparente */
-    opacity: 1;
+        transform 0.15s ease,
+        background 0.15s ease,
+        box-shadow 0.15s ease,
+        border-color 0.15s ease;
 }
 
 
-/* ==========================================================================
-   HOVER
-   ========================================================================== */
+/* =========================================================
+   PC — HOVER
+   ========================================================= */
 
 .music-toggle:hover {
-
     background: var(--jade-green);
 
     color: var(--ink-black);
 
     border-color: var(--white);
 
-    transform:
-        translate(3px, 3px);
+    transform: translate(3px, 3px);
 
     box-shadow:
         2px 2px 0 var(--purple-black);
 }
 
 
-/* ==========================================================================
+/* =========================================================
    CLICK
-   ========================================================================== */
+   ========================================================= */
 
 .music-toggle:active {
+    transform: translate(5px, 5px);
 
-    transform:
-        translate(5px, 5px);
-
-    box-shadow:
-        none;
+    box-shadow: none;
 }
 
 
-/* ==========================================================================
+/* =========================================================
    CELULAR
-   ========================================================================== */
+   ========================================================= */
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
 
     .music-toggle {
+        position: fixed !important;
 
-        /* Esquina inferior derecha */
-        right: 14px;
-        bottom: 14px;
+        right: 12px !important;
+        bottom: 12px !important;
 
-        /* Más compacto */
-        min-width: auto;
+        top: auto !important;
+        left: auto !important;
 
-        padding: 10px 12px;
+        z-index: 999999 !important;
 
-        font-size: .42rem;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
 
-        /* Sombra más pequeña */
+        min-width: 0;
+        width: auto;
+
+        padding: 10px 11px;
+
+        font-size: 0.40rem;
+
+        border-width: 2px;
+
         box-shadow:
             3px 3px 0 var(--purple-black);
-
-        /* Respeta celulares con notch / barra inferior */
-        bottom:
-            calc(14px + env(safe-area-inset-bottom));
     }
 
 }
 
 
-/* ==========================================================================
+/* =========================================================
    CELULARES MUY PEQUEÑOS
-   ========================================================================== */
+   ========================================================= */
 
-@media (max-width: 380px) {
+@media screen and (max-width: 380px) {
 
     .music-toggle {
 
-        right: 10px;
+        right: 8px !important;
+        bottom: 8px !important;
 
-        padding: 9px 10px;
+        padding: 9px 9px;
 
-        font-size: .38rem;
+        font-size: 0.35rem;
     }
 
 }
