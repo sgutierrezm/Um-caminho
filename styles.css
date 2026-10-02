@@ -1369,6 +1369,17 @@ h3 {
     background-image:  rgba(48, 23, 43, 0.50),   url("assets/hero-8bit.png");
 
 }
+   .cronograma-section h2{
+           position: relative;
+        margin-bottom: 50px;
+        text-align: center;
+        font-family: "Press Start 2P", monospace;
+        font-size: clamp(1rem, 3vw, 1.6rem);
+        line-height: 1.7;
+        text-transform: uppercase;
+        color: var(--white);
+        text-shadow: 4px 4px 0 var(--purple-main);
+      }
 /* ==========================================================================
    FORMATO — CHAVEAMENTO RETRO 8-BIT
    ========================================================================== */
