@@ -1,6 +1,25 @@
 // Esperar a que el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', () => {
+const music = document.getElementById("bg-music");
+const musicToggle = document.getElementById("music-toggle");
 
+musicToggle.addEventListener("click", () => {
+
+    if (music.paused) {
+
+        music.play();
+
+        musicToggle.textContent = "🎵 MUSIC ON";
+
+    } else {
+
+        music.pause();
+
+        musicToggle.textContent = "🔇 MUSIC OFF";
+
+    }
+
+});
     // 1. Lógica del Menú Móvil (Hamburguesa)
     const menuToggle = document.querySelector('.menu-toggle');
     const mainNavUl = document.querySelector('.main-nav ul');
