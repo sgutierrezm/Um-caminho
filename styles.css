@@ -1350,13 +1350,14 @@ h3 {
    CRONOGRAMA SECTION
    ========================================================================== */
 .cronograma-section {
-    background:  rgba(48, 23, 43, 0.50),   url("assets/hero-8bit.png");
     position: relative;
     padding: 50px 0;
     background-size: cover;
     background-position: center top;
     background-attachment: fixed;
     color: var(--text-dark), rgba(21, 191, 81, 0.35);
+    background-image:  rgba(48, 23, 43, 0.50),   url("assets/hero-8bit.png");
+
 }
 /* ==========================================================================
    FORMATO — CHAVEAMENTO RETRO 8-BIT
