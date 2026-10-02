@@ -276,18 +276,51 @@ margin-bottom: 20px;
    LOGO
    ========================================================================== */
 
-.site-header .logo strong {
-  font-family: "Press Start 2P", monospace;
+.site-header .logo {
+    display: flex;
 
-  font-size: 0.75rem;
+    align-items: center;
+    justify-content: center;
 
-  color: var(--jade-green);
+    width: 150px;
+    height: 50px;
 
-  text-shadow:
-    3px 3px 0 var(--forest-green),
-    0 0 10px var(--jade-green);
+    flex-shrink: 0;
 
-  letter-spacing: 1px;
+    transition:
+        transform 0.2s ease,
+        filter 0.2s ease;
+}
+
+
+/* SVG */
+
+.site-header .logo img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(3px 3px 0 var(--forest-green))
+        drop-shadow(0 0 6px var(--jade-green));
+
+    transition:
+        transform 0.2s ease,
+        filter 0.2s ease;
+}
+
+
+/* Efeito ao passar o mouse */
+
+.site-header .logo:hover img {
+    transform: scale(1.05);
+
+    filter:
+        drop-shadow(3px 3px 0 var(--forest-green))
+        drop-shadow(0 0 12px var(--jade-green));
 }
 
 /* ==========================================================================
